@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Unibron-ug — shop quality clothes and shoes online in Uganda. Fast delivery in Kampala and nationwide." />
+  <title>Unibron-ug | Clothes & Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Unibron<span>-ug</span></a>
+
+      <form class="search" role="search" onsubmit="return false;">
+        <label class="sr-only" for="search-input">Search products</label>
+        <input id="search-input" type="search" placeholder="Search shoes, hoodies, jeans…" autocomplete="off" />
+      </form>
+
+      <button id="cart-btn" class="cart-btn" aria-controls="cart-drawer" aria-expanded="false">
+        Cart <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Kampala · Nationwide delivery</p>
+          <h1>Fresh fits,<br />delivered to your door.</h1>
+          <p class="lead">
+            Quality clothing and footwear at fair prices. Order online, pay by
+            Mobile Money or on delivery, and get your order in 1–3 days.
+          </p>
+          <a class="btn" href="#shop">Shop now</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span>👕</span><span>👟</span><span>👗</span><span>🧥</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop</h2>
+          <p class="muted" id="result-count"></p>
+        </div>
+
+        <div class="chips" id="filters" role="group" aria-label="Filter by category">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="Tops">Tops</button>
+          <button class="chip" data-filter="Hoodies">Hoodies</button>
+          <button class="chip" data-filter="Jeans">Jeans</button>
+          <button class="chip" data-filter="Dresses">Dresses</button>
+          <button class="chip" data-filter="Sneakers">Sneakers</button>
+          <button class="chip" data-filter="Sandals">Sandals</button>
+        </div>
+
+        <div class="grid" id="product-grid"></div>
+        <p class="empty" id="empty-state" hidden>No products match your search.</p>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section class="section alt">
+      <div class="container info-grid">
+        <div>
+          <h3>Delivery</h3>
+          <p>Kampala: same/next day. Other districts: 1–3 business days. Delivery fee confirmed on WhatsApp before dispatch.</p>
+        </div>
+        <div>
+          <h3>Payment</h3>
+          <p>MTN MoMo, Airtel Money, bank transfer, or cash on delivery within Kampala.</p>
+        </div>
+        <div>
+          <h3>Returns</h3>
+          <p>Wrong size or defective item? Exchange within 7 days, unworn and with tags.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <p class="muted">Questions about sizing or an order? Reach us directly.</p>
+        <ul class="contact-list">
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/256700000000" rel="noopener">+256 700 000 000</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@unibron-ug.example">hello@unibron-ug.example</a></li>
+          <li><strong>Location:</strong> Kampala, Uganda</li>
+          <li><strong>Hours:</strong> Mon–Sat, 9:00–19:00 EAT</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Unibron-ug. All rights reserved.</p>
+      <p class="muted">Prices in UGX. Product images are placeholders.</p>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">UGX 0</strong>
+      </div>
+      <a class="btn full" id="checkout-btn" href="#" target="_blank" rel="noopener">
+        Order via WhatsApp
+      </a>
+      <p class="fineprint">You'll confirm delivery and payment details on WhatsApp.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
