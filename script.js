@@ -14,7 +14,7 @@ const PRODUCTS = [
   { id: 'sd-02', name: 'Comfort Slide Sandals',   category: 'Sandals',  price: 55000,  emoji: '🩴', color: '#e9e4dc' },
 ];
 
-const WHATSAPP_NUMBER = '25673632129'; // ← REPLACE THIS WITH YOUR REAL WHATSAPP NUMBER LATER
+const WHATSAPP_NUMBER = '256773632129'; // ← REPLACE THIS WITH YOUR REAL WHATSAPP NUMBER LATER
 
 /* ---------- STATE ---------- */
 const CART_KEY = 'unibron-cart-v1';
